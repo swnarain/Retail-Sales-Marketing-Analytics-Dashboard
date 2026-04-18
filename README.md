@@ -1,186 +1,318 @@
-# Retail-Sales-Marketing-Analytics-Dashboard
+# Sales & Marketing Performance Dashboard (Power BI)
 
-An end‑to‑end data analytics project analysing sales and marketing performance for a UK retail company. Built an interactive Power BI dashboard with KPIs, category trends, regional insights, top‑product analysis, CAC by region, and marketing channel performance. Includes business requirements, DAX measures, insights, and strategic recommendations.
-
----
-
-Power BI | Data Analysis | Business Intelligence
-
-### **Executive Summary**
-
-This project analyses three years of sales and marketing data for a UK retail company.
-I designed and delivered an interactive Power BI dashboard that helps leadership:
-
-- Understand revenue drivers
-- Evaluate marketing efficiency
-- Identify underperforming categories
-- Optimise regional and product strategies
-
-The dashboard transforms raw data into actionable insights that support data‑driven decision‑making.
+**End-to-End Data Analytics Project | UK Retail Industry (Simulated Business Case)**
+**Role:** Sole Data Analyst (End-to-End Ownership)
+**Tools:** Power BI, DAX, Excel, Data Modelling
 
 ---
 
-### **Business Scenario**
+## Business Context
 
-I worked as a data analyst on a simulated project for NovaRetail Group, a mid-sized UK retailer selling Electronics, Fashion, Kitchen, and Sports products.
+A mid-sized UK retail company operating across multiple regions and product categories is experiencing steady revenue growth but lacks **visibility into what is actually driving performance**.
 
-The leadership team lacked visibility into:
+Sales and marketing data exist in silos, limiting leadership’s ability to:
 
-- Which products and regions drive revenue
-- Whether marketing spend is efficient
-- Why certain categories were underperforming
+* Understand revenue drivers
+* Evaluate marketing efficiency
+* Identify high-performing regions
+* Make data-driven investment decisions
 
-They needed a centralised analytics dashboard to support strategic decisions.
-
----
-
-### **My Objective**
-
-My role was to:
-
-- Translate business questions into measurable KPIs
-- Build an interactive Power BI dashboard
-- Analyse sales and marketing performance
-- Deliver insights and recommendations to improve revenue and efficiency
-
----
-### **What I Did (End-to-End)**
-
-**1. Data Understanding & Preparation**
-
-- Reviewed dataset and data dictionary
-- Identified key fields: sales, orders, categories, regions, marketing spend
-- Created calculated measures including:
-      Total Sales
-      Average Order Value (AOV)
-      Customer Acquisition Cost (CAC)
-
-**2. Defined Business Requirements**
-
-Before building visuals, I translated business needs into analytical questions:
-
-- How is revenue trending over time?
-- Which products and categories drive the most sales?
-- Which regions are most profitable vs expensive?
-- Which marketing channels deliver the best ROI?
-
-**3. Built Interactive Dashboard (Power BI)**
-
-Dashboard Overview  
-[Insert full dashboard screenshot here]
-
----
-### **Key Visuals Created**
-
-- Sales Trend Analysis (Yearly & Monthly)
-[Insert line chart screenshot here]
-
-- Drill-down capability
-
-- Identifies growth patterns and seasonality
-
-- Product Performance by Category
-[Insert pie chart screenshot here]
-
-- Shows contribution of each category to total sales
-
-- Regional Sales Breakdown
-[Insert stacked column chart screenshot here]
-
-Compares category performance across regions
-
-- Top Performing Products
-[Insert bar chart screenshot here]
-
-- Customer Acquisition Cost (CAC) by Region
-[Insert treemap screenshot here]
-
-- Marketing Channel Performance
-[Insert donut chart screenshot here]
-
-- Interactive Product Slicer
-[Insert slicer screenshot here]
-
----
-### **Key Insights**
-
-**1. Sales are growing—but slowly**
-Revenue increased from $280K → $304K over three years.
-Growth is steady but not accelerating.
-
-**2. Clear seasonal patterns**
-
-Peaks: January, August
-Dips: September–October
-
-**3. Revenue is heavily concentrated**
-
-Electronics = 57% of total sales
-
-Fashion = 8%
-
-**4. High revenue ≠ high efficiency**
-
-Yorkshire generates highest sales
-
-London has highest CAC
-
-**5. Few products drive most revenue**
-
-Laptops dominate at $224K
-Smartphones and Bicycles follow
-
-**6. Fashion category is declining**
-
-Consistent drop over 3 years.
-
-📣 7. Marketing performance is uneven
-Instagram & Google Ads perform strongest
-
-TikTok underperforms
+As a result, strategic decisions around **budget allocation, product focus, and growth strategy** are not fully optimised.
 
 ---
 
-### **Recommendations (Business Impact)**
+## Problem Statement
 
-**1. Scale High-Performing Products**
+The business requires a **centralised, data-driven solution** to answer key commercial questions:
 
-Increase stock and promotions for laptops & smartphones
+* Are we growing sustainably over time?
+* Which products and categories drive the most revenue?
+* Which regions deliver the highest return on investment?
+* Are marketing channels operating efficiently?
 
-Bundle with complementary items
+Without these insights, the company risks:
 
-**2. Fix Underperforming Categories**
-
-Reposition Fashion using trend-based marketing
-
-Introduce targeted promotions and influencer campaigns
-
-**3. Optimise Marketing Spend**
-
-Increase investment in high-performing channels
-
-Improve TikTok strategy rather than abandoning it
-
-**4. Focus on Profitable Regions**
-
-Invest more in low CAC regions
-Reassess spend in high-cost regions
-
-**5. Leverage Seasonality**
-
-Align campaigns with peak months
-Introduce incentives during low periods
+* Misallocating marketing spend
+* Over-dependence on a narrow product base
+* Missing scalable growth opportunities
 
 ---
-### **Skills Demonstrated**
 
-- Data Cleaning & Preparation
-- KPI Design & Business Translation
-- Data Modelling (Star Schema)
-- DAX (Measures, Time Intelligence, Ranking)
-- Power BI Visualisation
-- Analytical Thinking
-- Data Storytelling
-- Business Insight Generation
+## Project Objective
 
-**Project Files**
+To design and deliver an **interactive Power BI dashboard** that:
+
+* Tracks core commercial KPIs
+* Identifies revenue drivers and underperforming segments
+* Evaluates marketing performance using Customer Acquisition Cost (CAC)
+* Enables self-service analysis for non-technical stakeholders
+
+---
+
+## My Approach (What I Did)
+
+### 1. Translating Business Needs into Metrics
+
+Defined core KPIs aligned with business goals:
+
+* Total Sales
+* Average Order Value (AOV)
+* Total Quantity Sold
+* Customer Acquisition Cost (CAC)
+
+---
+
+### 2. Data Validation & Preparation
+
+Ensured data reliability before analysis:
+
+* Verified **Total Sales = Price × Quantity**
+* Cleaned missing and inconsistent values
+* Standardised categorical fields (region, category, channel)
+
+---
+
+### 3. Data Modelling
+
+Designed a **star schema** to optimise performance:
+
+* Fact table: Orders
+* Dimension tables: Date, Product, Region, Marketing
+
+Created a dedicated **Date table** to enable:
+
+* Monthly trends
+* Year-over-year comparisons
+
+---
+
+### 4. DAX Development
+
+```DAX
+Total Sales = SUM(Orders[TotalSales])
+
+Total Quantity = SUM(Orders[QuantitySold])
+
+AOV = DIVIDE([Total Sales], DISTINCTCOUNT(Orders[OrderID]))
+
+CAC = DIVIDE([Total Marketing Spend], [Customers Acquired])
+```
+
+Additional logic:
+
+* Product ranking (Top performers)
+* Channel and regional breakdowns
+* Dynamic filtering across visuals
+
+---
+
+### 5. Dashboard Design
+
+Built with a **business-first approach**:
+
+* KPI cards for quick executive insight
+* Clear visual hierarchy (overview → detail)
+* Interactive slicers (Date, Region, Category, Product)
+
+Designed for **intuitive use by non-technical stakeholders**.
+
+---
+
+## Dashboard Overview
+
+<img width="1088" height="736" alt="image" src="https://github.com/user-attachments/assets/3a69773c-716f-4154-9803-fb51af97765b" />
+
+
+
+
+
+## Key Insights
+
+---
+
+### 1. Growth & Seasonality
+
+<img width="1348" height="392" alt="image" src="https://github.com/user-attachments/assets/fe63fd63-1e27-4521-8e3e-7ad22de151d8" />
+
+
+
+
+* Revenue growth:
+
+  * 2022: £280K
+  * 2023: £293K
+  * 2024: £304K
+
+* Peak months: January, August
+
+* Low months: September–October
+
+**Insight:**
+The business is growing steadily but exhibits strong seasonality, indicating an opportunity to stabilise demand during low periods.
+
+---
+
+### 2. Product & Category Performance
+
+![Category Performance](images/category-performance.png)
+
+* Electronics: **57% of total revenue**
+* Sports & Outdoors: 21%
+* Kitchen: 13%
+* Fashion & Apparel: **8.3% (declining trend)**
+
+**Insight:**
+Revenue is highly concentrated in Electronics, creating **dependency risk**, while Fashion is underperforming and losing relevance.
+
+---
+
+### 3. Regional Performance & Efficiency
+
+![Regional Performance](images/regional-performance.png)
+
+Top regions:
+
+* Yorkshire & Humber: £245K
+* North West England: £241K
+
+CAC analysis:
+
+* Lowest CAC: Yorkshire
+* Highest CAC: Greater London
+
+**Insight:**
+Certain regions deliver higher revenue at lower acquisition cost, making them ideal for **scalable growth investment**.
+
+---
+
+### 4. Marketing Performance
+
+![Marketing Performance](images/marketing-performance.png)
+
+Revenue contribution:
+
+* Instagram: 27.9%
+* Google Ads: 26.3%
+* Facebook: 24.6%
+* TikTok: 21.3%
+
+**Insight:**
+TikTok generates comparatively lower returns relative to its spend, indicating inefficiencies in targeting, creative execution, or audience alignment.
+
+---
+
+## Business Impact (Value Delivered)
+
+This project goes beyond visualisation by delivering **actionable business value**:
+
+* Identified **high-performing products (Electronics)** as primary revenue drivers
+* Highlighted **low-CAC regions** for cost-efficient scaling
+* Exposed **inefficient marketing spend**, enabling reallocation of budget
+* Revealed **underperforming categories**, informing product strategy decisions
+
+📊 **Outcome:**
+If implemented, these insights could:
+
+* Improve **marketing ROI**
+* Increase **revenue through targeted investment**
+* Reduce **wasted spend on low-performing channels**
+
+---
+
+## Strategic Recommendations
+
+### 1. Scale High-Performing Products
+
+* Focus on Laptops, Smartphones, Bicycles
+* Introduce product bundles to increase AOV
+* Target high-value customer segments
+
+---
+
+### 2. Address Underperforming Categories
+
+* Reposition Fashion & Apparel
+* Use visually driven campaigns (Instagram, TikTok)
+* Introduce targeted promotions during low-demand periods
+
+---
+
+### 3. Optimise Marketing Spend
+
+* Increase investment in high-ROI channels (Instagram, Google Ads)
+* Rework TikTok strategy (creative testing, influencers)
+* Use Facebook for remarketing and retention
+
+---
+
+### 4. Regional Strategy
+
+* Scale investment in low-CAC regions (e.g. Yorkshire)
+* Focus on high-margin products in high-cost regions
+
+---
+
+### 5. Continuous Optimisation
+
+* Monthly performance reviews
+* A/B testing campaigns
+* Ongoing KPI monitoring
+
+---
+
+## Challenges & Limitations
+
+* Simulated dataset lacks real-world complexity (e.g. competition, pricing changes)
+* Limited customer-level data (no LTV or retention metrics)
+* Simplified marketing attribution (no multi-touch tracking)
+* Assumes clean and complete data
+
+**Impact:**
+Insights are directionally strong but would require deeper validation in a real-world environment.
+
+---
+
+## 🔍 Future Improvements
+
+* Customer segmentation & lifetime value analysis
+* Marketing attribution modelling
+* Predictive forecasting
+* Promotion and pricing optimisation
+
+---
+
+## 🛠 Skills Demonstrated
+
+* Data Cleaning & Validation
+* Data Modelling (Star Schema)
+* DAX Calculations
+* Data Visualisation (Power BI)
+* Business Analysis & Insight Generation
+* Stakeholder-Focused Communication
+
+---
+
+## Repository Structure
+
+```
+Sales-Marketing-Analytics-Dashboard/
+│
+├── README.md
+├── Sales_Marketing_Dashboard.pbix
+├── Sales_Marketing.xlsx
+└── images/
+```
+
+---
+
+## About Me
+
+I am a data analyst focused on translating data into **clear, actionable business insights**.
+
+Currently seeking opportunities in:
+
+* Data Analytics
+* Business Intelligence
+* Marketing / Commercial Analytics
+
+---
