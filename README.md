@@ -4,6 +4,8 @@
 **Role:** Sole Data Analyst (End-to-End Ownership)
 **Tools:** Power BI, DAX, Excel, Data Modelling
 
+<img width="1562" height="1042" alt="image" src="https://github.com/user-attachments/assets/d2208512-71d6-44b0-a51d-c478bfeece3e" />
+
 ---
 
 ## Business Context
@@ -120,7 +122,8 @@ Designed for **intuitive use by non-technical stakeholders**.
 
 ## Dashboard Overview
 
-<img width="1088" height="736" alt="image" src="https://github.com/user-attachments/assets/3a69773c-716f-4154-9803-fb51af97765b" />
+<img width="1562" height="1042" alt="image" src="https://github.com/user-attachments/assets/d2208512-71d6-44b0-a51d-c478bfeece3e" />
+
 
 
 
@@ -132,9 +135,10 @@ Designed for **intuitive use by non-technical stakeholders**.
 
 ### 1. Growth & Seasonality
 
-<img width="1348" height="392" alt="image" src="https://github.com/user-attachments/assets/fe63fd63-1e27-4521-8e3e-7ad22de151d8" />
-
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/626bf6e2-5160-49eb-b1cd-35fb77e27fa1" width="48%" style="border:1px solid #ccc;" />
+  <img src="https://github.com/user-attachments/assets/781b15e5-5275-4cce-bf00-9b7cb08a72b8" width="48%" style="border:1px solid #ccc;" />
+</p>
 
 
 * Revenue growth:
@@ -154,7 +158,10 @@ The business is growing steadily but exhibits strong seasonality, indicating an 
 
 ### 2. Product & Category Performance
 
-![Category Performance](images/category-performance.png)
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/8793cf69-0269-42ad-bf91-a2eb2e99796c" width="48%" style="border:1px solid #ccc;" />
+</p>
+
 
 * Electronics: **57% of total revenue**
 * Sports & Outdoors: 21%
@@ -168,7 +175,10 @@ Revenue is highly concentrated in Electronics, creating **dependency risk**, whi
 
 ### 3. Regional Performance & Efficiency
 
-![Regional Performance](images/regional-performance.png)
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/c7b49862-9868-4d3a-bf13-56018f4378c5" width="48%" style="border:1px solid #ccc; border-radius:6px;" />
+</p>
+
 
 Top regions:
 
