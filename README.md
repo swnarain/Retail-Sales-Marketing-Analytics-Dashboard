@@ -1,7 +1,8 @@
 # Sales & Marketing Performance Dashboard (Power BI)
 
+
 **End-to-End Data Analytics Project | UK Retail Industry (Simulated Business Case)**
-**Role:** Sole Data Analyst (End-to-End Ownership)
+
 **Tools:** Power BI, DAX, Excel, Data Modelling
 
 <img width="1562" height="1042" alt="image" src="https://github.com/user-attachments/assets/d2208512-71d6-44b0-a51d-c478bfeece3e" />
@@ -46,89 +47,87 @@ Without these insights, the company risks:
 
 To ensure the solution directly addressed business needs, I translated stakeholder questions into a structured set of analytical requirements and measurable KPIs.
 
----
 
-### 1. Overall Revenue Performance
+**1. Overall Revenue Performance**
 
 **Requirement:** Calculate total revenue across all transactions
 **Business Value:** Provides a clear view of overall financial performance and tracks progress against growth targets
 
----
 
-### 2. Customer Spend Behaviour (AOV)
+**2. Customer Spend Behaviour (AOV)**
 
 **Requirement:** Calculate Average Order Value (AOV)
 **Business Value:** Helps understand purchasing behaviour and identify opportunities to increase basket size
 
----
 
-### 3. Sales Volume Tracking
+
+**3. Sales Volume Tracking**
 
 **Requirement:** Measure total quantity sold
 **Business Value:** Supports demand analysis and operational planning
 
----
 
-### 4. Marketing Efficiency (CAC)
+
+**4. Marketing Efficiency (CAC)**
 
 **Requirement:** Calculate Customer Acquisition Cost (CAC)
 **Business Value:** Evaluates effectiveness of marketing spend and supports budget optimisation
 
----
 
-### 5. Time-Based Performance Analysis
+
+**5. Time-Based Performance Analysis**
 
 **Requirement:** Analyse monthly and yearly sales trends
 **Business Value:** Identifies seasonality patterns and supports strategic planning
 
----
 
-### 6. Product & Category Performance
+
+**6. Product & Category Performance**
 
 **Requirement:** Analyse revenue by product category
 **Business Value:** Identifies high-performing categories and informs inventory and marketing strategy
 
----
 
-### 7. Regional Performance
+
+**7. Regional Performance**
 
 **Requirement:** Compare sales across regions
 **Business Value:** Highlights regional strengths and growth opportunities
 
----
 
-### 8. Top Product Analysis
+
+**8. Top Product Analysis**
 
 **Requirement:** Identify top-performing products by revenue
 **Business Value:** Supports product prioritisation and promotional strategy
 
----
 
-### 9. Regional Marketing Efficiency
+
+**9. Regional Marketing Efficiency**
 
 **Requirement:** Compare CAC across regions
 **Business Value:** Identifies where acquisition is most cost-effective
 
----
 
-### 10. Marketing Channel Effectiveness
+
+**10. Marketing Channel Effectiveness**
 
 **Requirement:** Analyse revenue contribution by channel
 **Business Value:** Enables optimisation of marketing mix
 
----
 
-### 11. Interactive Analysis
+
+**11. Interactive Analysis**
 
 **Requirement:** Enable filtering by date, region, category, and product
 **Business Value:** Allows stakeholders to explore insights independently
 
 
----
+
 
 ## My Approach
 
-### 1. Translating Requirements into KPIs
+1. Translating Requirements into KPIs
 
 Based on the defined business requirements, I translated key questions into measurable KPIs that reflect both commercial performance and marketing efficiency:
 
@@ -139,9 +138,9 @@ Based on the defined business requirements, I translated key questions into meas
 
 These KPIs formed the foundation of the dashboard and ensured that all analysis remained aligned with business objectives.
 
----
 
-### 2. Data Validation & Preparation
+
+2. Data Validation & Preparation
 
 Ensured data reliability before analysis:
 
@@ -149,9 +148,8 @@ Ensured data reliability before analysis:
 * Cleaned missing and inconsistent values
 * Standardised categorical fields (region, category, channel)
 
----
 
-### 3. Data Modelling
+3. Data Modelling
 
 Designed a **star schema** to optimise performance:
 
@@ -163,7 +161,7 @@ Created a dedicated **Date table** to enable:
 * Monthly trends
 * Year-over-year comparisons
 
----
+
 
 ### 4. DAX Development
 
@@ -183,7 +181,7 @@ Additional logic:
 * Channel and regional breakdowns
 * Dynamic filtering across visuals
 
----
+
 
 ### 5. Dashboard Design
 
@@ -195,7 +193,7 @@ Built with a **business-first approach**:
 
 Designed for **intuitive use by non-technical stakeholders**.
 
----
+
 
 ## Dashboard Overview
 
@@ -227,7 +225,7 @@ Monthly trends reveal strong seasonality:
 **Business Insight:**
 While the company is achieving steady revenue growth, seasonal fluctuations indicate opportunities to improve sales performance during weaker months through targeted promotions and demand-generation campaigns.
 
----
+
 
 ### 2. Product Category Concentration
 
@@ -241,7 +239,7 @@ While the company is achieving steady revenue growth, seasonal fluctuations indi
 **Business Insight:**
 The business is highly dependent on Electronics for revenue growth. While this category drives performance, over-reliance creates concentration risk. Meanwhile, the weak performance of Fashion & Apparel suggests poor product positioning or limited market demand.
 
----
+
 
 ### 3. Regional Sales Performance
 
@@ -259,7 +257,7 @@ Electronics leads across all regions, with particularly strong performance in:
 **Business Insight:**
 Regional performance indicates strong revenue opportunities in specific markets, particularly where Electronics performs well. These regions present scalable growth opportunities and should be prioritised in regional sales planning.
 
----
+
 
 ### 4. Product Revenue Drivers
 
@@ -274,7 +272,7 @@ These products account for a significant share of overall sales.
 **Business Insight:**
 Revenue is concentrated among a small number of top-performing products. These items are key commercial drivers and should be prioritised for inventory availability, promotional campaigns, and cross-selling opportunities.
 
----
+
 
 ### 5. Customer Acquisition Cost (CAC) Efficiency
 
@@ -286,7 +284,7 @@ Customer acquisition costs vary significantly by region:
 **Business Insight:**
 Yorkshire delivers stronger cost efficiency in acquiring customers, making it an attractive region for scaling acquisition efforts. Higher CAC in London suggests stronger competition or lower marketing efficiency.
 
----
+
 
 ### 6. Marketing Channel Performance
 
@@ -307,7 +305,7 @@ Instagram and Google Ads together contribute over half of total revenue.
 **Business Insight:**
 Instagram and Google Ads deliver the strongest revenue contribution and represent the most effective channels for growth. TikTok contributes meaningfully but underperforms relative to the leading channels, indicating room for optimisation.
 
----
+
 
 ### 7. Underperforming Category Trend
 
@@ -335,7 +333,7 @@ Increase investment in high-revenue products such as **Laptops, Smartphones, and
 **Expected Impact:**
 Higher revenue growth through improved product focus and increased basket value.
 
----
+
 
 ### 2. Reposition Underperforming Categories
 
@@ -348,7 +346,7 @@ Improve Fashion & Apparel performance by:
 **Expected Impact:**
 Revitalising this category could improve category balance and reduce over-reliance on Electronics.
 
----
+
 
 ### 3. Optimise Marketing Channel Investment
 
@@ -361,7 +359,7 @@ Allocate a greater share of spend to **Instagram and Google Ads**, where perform
 **Expected Impact:**
 Higher marketing ROI and improved channel efficiency.
 
----
+
 
 ### 4. Focus Growth in Low-CAC Regions
 
@@ -375,7 +373,7 @@ For high-CAC regions such as London:
 **Expected Impact:**
 More efficient growth through better regional budget allocation.
 
----
+
 
 ### 5. Address Seasonal Revenue Gaps
 
@@ -388,7 +386,7 @@ Launch targeted campaigns during low-performing months (September–October), su
 **Expected Impact:**
 Reduced seasonality risk and more consistent monthly revenue.
 
----
+
 
 ## Business Impact (Value Delivered)
 
@@ -406,7 +404,7 @@ If implemented, these insights could:
 * Increase **revenue through targeted investment**
 * Reduce **wasted spend on low-performing channels**
 
----
+
 
 ## Challenges & Limitations
 
@@ -418,7 +416,7 @@ If implemented, these insights could:
 **Impact:**
 Insights are directionally strong but would require deeper validation in a real-world environment.
 
----
+
 
 ## 🔍 Future Improvements
 
@@ -427,7 +425,7 @@ Insights are directionally strong but would require deeper validation in a real-
 * Predictive forecasting
 * Promotion and pricing optimisation
 
----
+
 
 ## 🛠 Skills Demonstrated
 
@@ -438,7 +436,7 @@ Insights are directionally strong but would require deeper validation in a real-
 * Business Analysis & Insight Generation
 * Stakeholder-Focused Communication
 
----
+
 
 ## Repository Structure
 
