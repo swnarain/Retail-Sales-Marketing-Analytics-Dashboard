@@ -9,7 +9,25 @@
 
 ---
 
-## Business Context
+# Table of Contents
+1. [Business Context](#business-context)  
+2. [Problem Statement](#problem-statement)  
+3. [Project Objective](#project-objective)  
+4. [Business Requirements & KPI Framework](#business-requirements--kpi-framework)  
+5. [My Approach](#my-approach)  
+6. [Dashboard Overview](#dashboard-overview)  
+7. [Key Insights](#key-insights)  
+8. [Strategic Recommendations](#strategic-recommendations)  
+9. [Business Impact](#business-impact-value-delivered)  
+10. [Challenges & Limitations](#challenges--limitations)  
+11. [Future Improvements](#-future-improvements)  
+12. [Skills Demonstrated](#-skills-demonstrated)  
+13. [Repository Structure](#repository-structure)  
+14. [About Me](#about-me)
+
+---
+
+# Business Context
 
 A mid-sized UK retail company operating across multiple regions and product categories is experiencing steady revenue growth but lacks **visibility into what is actually driving performance**.
 
@@ -24,7 +42,7 @@ As a result, strategic decisions around **budget allocation, product focus, and 
 
 ---
 
-## Problem Statement
+# Problem Statement
 
 The business requires a **centralised, data-driven solution** to answer key commercial questions:
 
@@ -41,106 +59,95 @@ Without these insights, the company risks:
 
 ---
 
-## Project Objective
+# Project Objective
 
-## Business Requirements & KPI Framework
+**Business Requirements & KPI Framework**
 
 To ensure the solution directly addressed business needs, I translated stakeholder questions into a structured set of analytical requirements and measurable KPIs.
 
+<table>
+  <thead style="background-color:#1E90FF; color:white;">
+    <tr>
+      <th>#</th>
+      <th>Business Requirement</th>
+      <th>Requirement Description</th>
+      <th>Business Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Overall Revenue Performance</td>
+      <td>Calculate total revenue across all transactions</td>
+      <td>Provides a clear view of overall financial performance and tracks progress against growth targets</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Customer Spend Behaviour (AOV)</td>
+      <td>Calculate Average Order Value (AOV)</td>
+      <td>Helps understand purchasing behaviour and identify opportunities to increase basket size</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sales Volume Tracking</td>
+      <td>Measure total quantity sold</td>
+      <td>Supports demand analysis and operational planning</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Marketing Efficiency (CAC)</td>
+      <td>Calculate Customer Acquisition Cost (CAC)</td>
+      <td>Evaluates effectiveness of marketing spend and supports budget optimisation</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Time-Based Performance Analysis</td>
+      <td>Analyse monthly and yearly sales trends</td>
+      <td>Identifies seasonality patterns and supports strategic planning</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Product & Category Performance</td>
+      <td>Analyse revenue by product category</td>
+      <td>Identifies high-performing categories and informs inventory and marketing strategy</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Regional Performance</td>
+      <td>Compare sales across regions</td>
+      <td>Highlights regional strengths and growth opportunities</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Top Product Analysis</td>
+      <td>Identify top-performing products by revenue</td>
+      <td>Supports product prioritisation and promotional strategy</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Regional Marketing Efficiency</td>
+      <td>Compare CAC across regions</td>
+      <td>Identifies where acquisition is most cost-effective</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Marketing Channel Effectiveness</td>
+      <td>Analyse revenue contribution by channel</td>
+      <td>Enables optimisation of marketing mix</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Interactive Analysis</td>
+      <td>Enable filtering by date, region, category, and product</td>
+      <td>Allows stakeholders to explore insights independently</td>
+    </tr>
+  </tbody>
+</table>
 
 
-**1. Overall Revenue Performance**
+# My Approach
 
-**Requirement:** Calculate total revenue across all transactions
-
-**Business Value:** Provides a clear view of overall financial performance and tracks progress against growth targets
-
-
-
-**2. Customer Spend Behaviour (AOV)**
-
-**Requirement:** Calculate Average Order Value (AOV)
-
-**Business Value:** Helps understand purchasing behaviour and identify opportunities to increase basket size
-
-
-
-**3. Sales Volume Tracking**
-
-**Requirement:** Measure total quantity sold
-
-**Business Value:** Supports demand analysis and operational planning
-
-
-
-**4. Marketing Efficiency (CAC)**
-
-**Requirement:** Calculate Customer Acquisition Cost (CAC)
-
-**Business Value:** Evaluates effectiveness of marketing spend and supports budget optimisation
-
-
-
-**5. Time-Based Performance Analysis**
-
-**Requirement:** Analyse monthly and yearly sales trends
-
-**Business Value:** Identifies seasonality patterns and supports strategic planning
-
-
-
-**6. Product & Category Performance**
-
-**Requirement:** Analyse revenue by product category
-
-**Business Value:** Identifies high-performing categories and informs inventory and marketing strategy
-
-
-
-**7. Regional Performance**
-
-**Requirement:** Compare sales across regions
-
-**Business Value:** Highlights regional strengths and growth opportunities
-
-
-
-**8. Top Product Analysis**
-
-**Requirement:** Identify top-performing products by revenue
-
-**Business Value:** Supports product prioritisation and promotional strategy
-
-
-
-**9. Regional Marketing Efficiency**
-
-**Requirement:** Compare CAC across regions
-
-**Business Value:** Identifies where acquisition is most cost-effective
-
-
-
-**10. Marketing Channel Effectiveness**
-
-**Requirement:** Analyse revenue contribution by channel
-
-**Business Value:** Enables optimisation of marketing mix
-
-
-
-**11. Interactive Analysis**
-
-**Requirement:** Enable filtering by date, region, category, and product
-
-**Business Value:** Allows stakeholders to explore insights independently
-
-
-
-
-## My Approach
-
-1. Translating Requirements into KPIs
+**1. Translating Requirements into KPIs**
 
 Based on the defined business requirements, I translated key questions into measurable KPIs that reflect both commercial performance and marketing efficiency:
 
@@ -151,9 +158,7 @@ Based on the defined business requirements, I translated key questions into meas
 
 These KPIs formed the foundation of the dashboard and ensured that all analysis remained aligned with business objectives.
 
-
-
-2. Data Validation & Preparation
+**2. Data Validation & Preparation**
 
 Ensured data reliability before analysis:
 
@@ -161,22 +166,19 @@ Ensured data reliability before analysis:
 * Cleaned missing and inconsistent values
 * Standardised categorical fields (region, category, channel)
 
+**3. Data Modelling**
 
-3. Data Modelling
-
-Designed a **star schema** to optimise performance:
+- Designed a **star schema** to optimise performance:
 
 * Fact table: Orders
 * Dimension tables: Date, Product, Region, Marketing
 
-Created a dedicated **Date table** to enable:
+- Created a dedicated **Date table** to enable:
 
 * Monthly trends
 * Year-over-year comparisons
 
-
-
-### 4. DAX Development
+**4. DAX Development**
 
 ```DAX
 Total Sales = SUM(Orders[TotalSales])
@@ -188,15 +190,14 @@ AOV = DIVIDE([Total Sales], DISTINCTCOUNT(Orders[OrderID]))
 CAC = DIVIDE([Total Marketing Spend], [Customers Acquired])
 ```
 
-Additional logic:
+**Additional logic:**
 
 * Product ranking (Top performers)
 * Channel and regional breakdowns
 * Dynamic filtering across visuals
 
 
-
-### 5. Dashboard Design
+**5. Dashboard Design**
 
 Built with a **business-first approach**:
 
@@ -208,19 +209,18 @@ Designed for **intuitive use by non-technical stakeholders**.
 
 
 
-## Dashboard Overview
+# Dashboard Overview
 
 <img width="1562" height="1042" alt="image" src="https://github.com/user-attachments/assets/d2208512-71d6-44b0-a51d-c478bfeece3e" />
 
 
 
 
-
-## Key Insights
+# Key Insights
 
 ---
 
-### 1. Sales Growth & Seasonality
+## 1. Sales Growth & Seasonality
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/626bf6e2-5160-49eb-b1cd-35fb77e27fa1" width="48%" style="border:1px solid #ccc;" />
@@ -410,7 +410,7 @@ This project goes beyond visualisation by delivering **actionable business value
 * Exposed **inefficient marketing spend**, enabling reallocation of budget
 * Revealed **underperforming categories**, informing product strategy decisions
 
-📊 **Outcome:**
+**Outcome:**
 If implemented, these insights could:
 
 * Improve **marketing ROI**
@@ -431,7 +431,7 @@ Insights are directionally strong but would require deeper validation in a real-
 
 
 
-## 🔍 Future Improvements
+## Future Improvements
 
 * Customer segmentation & lifetime value analysis
 * Marketing attribution modelling
@@ -440,7 +440,7 @@ Insights are directionally strong but would require deeper validation in a real-
 
 
 
-## 🛠 Skills Demonstrated
+## Skills Demonstrated
 
 * Data Cleaning & Validation
 * Data Modelling (Star Schema)
