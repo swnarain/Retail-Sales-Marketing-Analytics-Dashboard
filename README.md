@@ -147,6 +147,8 @@ To ensure the solution directly addressed business needs, I translated stakehold
 
 # My Approach
 
+
+
 **1. Translating Requirements into KPIs**
 
 Based on the defined business requirements, I translated key questions into measurable KPIs that reflect both commercial performance and marketing efficiency:
@@ -158,6 +160,8 @@ Based on the defined business requirements, I translated key questions into meas
 
 These KPIs formed the foundation of the dashboard and ensured that all analysis remained aligned with business objectives.
 
+
+
 **2. Data Validation & Preparation**
 
 Ensured data reliability before analysis:
@@ -165,18 +169,24 @@ Ensured data reliability before analysis:
 * Verified **Total Sales = Price × Quantity**
 * Cleaned missing and inconsistent values
 * Standardised categorical fields (region, category, channel)
+  
+
 
 **3. Data Modelling**
 
 - Designed a **star schema** to optimise performance:
 
 * Fact table: Orders
+  
 * Dimension tables: Date, Product, Region, Marketing
 
 - Created a dedicated **Date table** to enable:
 
 * Monthly trends
+  
 * Year-over-year comparisons
+  
+
 
 **4. DAX Development**
 
@@ -190,6 +200,7 @@ AOV = DIVIDE([Total Sales], DISTINCTCOUNT(Orders[OrderID]))
 CAC = DIVIDE([Total Marketing Spend], [Customers Acquired])
 ```
 
+
 **Additional logic:**
 
 * Product ranking (Top performers)
@@ -198,6 +209,7 @@ CAC = DIVIDE([Total Marketing Spend], [Customers Acquired])
 
 
 **5. Dashboard Design**
+
 
 Built with a **business-first approach**:
 
@@ -227,6 +239,7 @@ Designed for **intuitive use by non-technical stakeholders**.
   <img src="https://github.com/user-attachments/assets/781b15e5-5275-4cce-bf00-9b7cb08a72b8" width="48%" style="border:1px solid #ccc;" />
 </p>
 
+
 Sales increased steadily over the three-year period, rising from **£280K in 2022** to **£304K in 2024**, demonstrating consistent year-on-year growth.
 
 Monthly trends reveal strong seasonality:
@@ -236,6 +249,7 @@ Monthly trends reveal strong seasonality:
 * Recovery in **November and December**, suggesting increased holiday season demand
 
 **Business Insight:**
+
 While the company is achieving steady revenue growth, seasonal fluctuations indicate opportunities to improve sales performance during weaker months through targeted promotions and demand-generation campaigns.
 
 
@@ -250,6 +264,7 @@ While the company is achieving steady revenue growth, seasonal fluctuations indi
 **Electronics generates 57% of total revenue (£505K)**, significantly outperforming all other categories. In contrast, **Fashion & Apparel contributes only 8.3% (£73K)** and continues to underperform.
 
 **Business Insight:**
+
 The business is highly dependent on Electronics for revenue growth. While this category drives performance, over-reliance creates concentration risk. Meanwhile, the weak performance of Fashion & Apparel suggests poor product positioning or limited market demand.
 
 
@@ -268,11 +283,17 @@ Electronics leads across all regions, with particularly strong performance in:
 * Yorkshire and the Humber (£135K)
 
 **Business Insight:**
+
 Regional performance indicates strong revenue opportunities in specific markets, particularly where Electronics performs well. These regions present scalable growth opportunities and should be prioritised in regional sales planning.
 
 
 
 ### 4. Product Revenue Drivers
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/aeeaa1f1-d0cc-4f7e-9cf2-cb5c0d1e7d65" width="48%" style="border:1px solid #ccc; border-radius:6px;" />
+</p>
+
 
 The highest revenue-generating products are:
 
@@ -283,11 +304,17 @@ The highest revenue-generating products are:
 These products account for a significant share of overall sales.
 
 **Business Insight:**
+
 Revenue is concentrated among a small number of top-performing products. These items are key commercial drivers and should be prioritised for inventory availability, promotional campaigns, and cross-selling opportunities.
 
 
 
 ### 5. Customer Acquisition Cost (CAC) Efficiency
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/9b9f8b0c-2ae5-40b4-aea0-328811f2eb62" width="48%" style="border:1px solid #ccc; border-radius:6px;" />
+</p>
+
 
 Customer acquisition costs vary significantly by region:
 
@@ -295,6 +322,7 @@ Customer acquisition costs vary significantly by region:
 * **Lowest CAC:** Yorkshire and the Humber
 
 **Business Insight:**
+
 Yorkshire delivers stronger cost efficiency in acquiring customers, making it an attractive region for scaling acquisition efforts. Higher CAC in London suggests stronger competition or lower marketing efficiency.
 
 
@@ -316,11 +344,17 @@ The highest-performing marketing channels are:
 Instagram and Google Ads together contribute over half of total revenue.
 
 **Business Insight:**
+
 Instagram and Google Ads deliver the strongest revenue contribution and represent the most effective channels for growth. TikTok contributes meaningfully but underperforms relative to the leading channels, indicating room for optimisation.
 
 
 
 ### 7. Underperforming Category Trend
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/3f58fc0a-73fe-4013-badf-264efa95f168" width="48%" style="border:1px solid #ccc; border-radius:6px;" />
+</p>
+
 
 Fashion & Apparel sales declined from:
 
@@ -329,6 +363,7 @@ Fashion & Apparel sales declined from:
 * **£19K in 2024**
 
 **Business Insight:**
+
 The continued decline in Fashion & Apparel suggests that the category is losing market traction. Without intervention, this segment may continue to reduce overall portfolio profitability.
 
 ---
@@ -344,6 +379,7 @@ Increase investment in high-revenue products such as **Laptops, Smartphones, and
 * Bundling complementary items to increase Average Order Value
 
 **Expected Impact:**
+
 Higher revenue growth through improved product focus and increased basket value.
 
 
@@ -357,6 +393,7 @@ Improve Fashion & Apparel performance by:
 * Using influencer and visual-first campaigns to increase engagement
 
 **Expected Impact:**
+
 Revitalising this category could improve category balance and reduce over-reliance on Electronics.
 
 
@@ -370,6 +407,7 @@ Allocate a greater share of spend to **Instagram and Google Ads**, where perform
 * Better audience targeting
 
 **Expected Impact:**
+
 Higher marketing ROI and improved channel efficiency.
 
 
@@ -384,6 +422,7 @@ For high-CAC regions such as London:
 * Focus on customer retention strategies
 
 **Expected Impact:**
+
 More efficient growth through better regional budget allocation.
 
 
@@ -397,6 +436,7 @@ Launch targeted campaigns during low-performing months (September–October), su
 * Demand generation campaigns
 
 **Expected Impact:**
+
 Reduced seasonality risk and more consistent monthly revenue.
 
 
@@ -411,6 +451,7 @@ This project goes beyond visualisation by delivering **actionable business value
 * Revealed **underperforming categories**, informing product strategy decisions
 
 **Outcome:**
+
 If implemented, these insights could:
 
 * Improve **marketing ROI**
@@ -427,6 +468,7 @@ If implemented, these insights could:
 * Assumes clean and complete data
 
 **Impact:**
+
 Insights are directionally strong but would require deeper validation in a real-world environment.
 
 
@@ -459,14 +501,13 @@ Retail-Sales-Marketing-Analytics-Dashboard/
 ├── README.md
 ├── Sales_Marketing_Dashboard.pbix
 ├── Sales_Marketing.xlsx
-└── images/
 ```
 
 ---
 
 ## About Me
 
-I translate data into **clear, actionable business insights**.
+As a data analyst I translate data into **clear, actionable business insights**.
 
 Currently seeking opportunities in:
 
