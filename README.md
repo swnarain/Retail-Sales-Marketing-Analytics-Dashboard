@@ -492,17 +492,6 @@ Insights are directionally strong but would require deeper validation in a real-
 * Stakeholder-Focused Communication
 
 
-
-## Repository Structure
-
-```
-Retail-Sales-Marketing-Analytics-Dashboard/
-│
-├── README.md
-├── Sales_Marketing_Dashboard.pbix
-├── Sales_Marketing.xlsx
-```
-
 ---
 
 ## About Me
