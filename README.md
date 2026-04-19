@@ -48,15 +48,19 @@ Without these insights, the company risks:
 To ensure the solution directly addressed business needs, I translated stakeholder questions into a structured set of analytical requirements and measurable KPIs.
 
 
+
 **1. Overall Revenue Performance**
 
 **Requirement:** Calculate total revenue across all transactions
+
 **Business Value:** Provides a clear view of overall financial performance and tracks progress against growth targets
+
 
 
 **2. Customer Spend Behaviour (AOV)**
 
 **Requirement:** Calculate Average Order Value (AOV)
+
 **Business Value:** Helps understand purchasing behaviour and identify opportunities to increase basket size
 
 
@@ -64,6 +68,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **3. Sales Volume Tracking**
 
 **Requirement:** Measure total quantity sold
+
 **Business Value:** Supports demand analysis and operational planning
 
 
@@ -71,6 +76,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **4. Marketing Efficiency (CAC)**
 
 **Requirement:** Calculate Customer Acquisition Cost (CAC)
+
 **Business Value:** Evaluates effectiveness of marketing spend and supports budget optimisation
 
 
@@ -78,6 +84,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **5. Time-Based Performance Analysis**
 
 **Requirement:** Analyse monthly and yearly sales trends
+
 **Business Value:** Identifies seasonality patterns and supports strategic planning
 
 
@@ -85,6 +92,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **6. Product & Category Performance**
 
 **Requirement:** Analyse revenue by product category
+
 **Business Value:** Identifies high-performing categories and informs inventory and marketing strategy
 
 
@@ -92,6 +100,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **7. Regional Performance**
 
 **Requirement:** Compare sales across regions
+
 **Business Value:** Highlights regional strengths and growth opportunities
 
 
@@ -99,6 +108,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **8. Top Product Analysis**
 
 **Requirement:** Identify top-performing products by revenue
+
 **Business Value:** Supports product prioritisation and promotional strategy
 
 
@@ -106,6 +116,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **9. Regional Marketing Efficiency**
 
 **Requirement:** Compare CAC across regions
+
 **Business Value:** Identifies where acquisition is most cost-effective
 
 
@@ -113,6 +124,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **10. Marketing Channel Effectiveness**
 
 **Requirement:** Analyse revenue contribution by channel
+
 **Business Value:** Enables optimisation of marketing mix
 
 
@@ -120,6 +132,7 @@ To ensure the solution directly addressed business needs, I translated stakehold
 **11. Interactive Analysis**
 
 **Requirement:** Enable filtering by date, region, category, and product
+
 **Business Value:** Allows stakeholders to explore insights independently
 
 
